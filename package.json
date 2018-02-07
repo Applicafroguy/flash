@@ -12,7 +12,9 @@
         "ionic:serve": "ionic-app-scripts serve",
         "android": "ionic cordova run android",
         "android:live": "ionic cordova run android --livereload",
-        "android:build": "ionic cordova build android --prod --release"
+        "android:build": "ionic cordova build android --prod --release",
+        "res": "ionic cordova resources",
+        "res:splash": "ionic cordova resources --splash"
     },
     "dependencies": {
         "@angular/common": "5.0.3",
