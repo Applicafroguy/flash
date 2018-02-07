@@ -1,3 +1,113 @@
 page-home {
-
+    @import url('https://fonts.googleapis.com/css?family=Pacifico');
+    $my-coolor: rgb(219, 211, 101);
+    font-family: 'Pacifico', cursive;
+    .header {
+        color: rgb(219, 211, 101);
+        margin-bottom: 50px;
+        h1 {
+            line-height: 55px;
+            font-size: 55px;
+            padding-top: 10px;
+            font-family: 'Pacifico', cursive;
+            margin: 0;
+            font-weight: bolder;
+            margin-bottom: 8px;
+        }
+        h4 {
+            margin: 0;
+            font-size: 25px;
+            font-family: 'Pacifico', cursive;
+        }
+    }
+    ion-header {
+        background-color: rgba(#54aff3, .89);
+    }
+    .identity {
+        color: #fcfcfc;
+        letter-spacing: 7px;
+        font-weight: bolder;
+    }
+    .bg {
+        background-image: url('../../assets/imgs/bg1.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        //background-color: #54aff3;
+    }
+    .cont {
+        padding-top: 40px;
+        height: 100%;
+        background-color: rgba(#54aff3, .89);
+    }
+    text-align: center;
+    ion-footer {
+        background-color: #54aff3;
+        font-style: italic;
+        ion-toolbar {
+            font-size: 10px !important;
+        }
+    }
+    #button {
+        width: 200px;
+        height: 200px;
+        border-bottom: 2px solid #eee;
+        background-image: linear-gradient(top, #999, #d0d0d0 80%);
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        box-shadow: inset rgba(0, 0, 0, 0.2) 0px 5px 6px;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        position: relative;
+    }
+    .flash-off {
+        transition: all .1s ease-out;
+        background-image: linear-gradient(top, #999, #d0d0d0 80%) !important;
+    }
+    .flash-on {
+        transition: all .1s ease-in;
+        background-image: linear-gradient(top, rgba(255, 187, 0, 0.829), rgb(219, 211, 101) 80%) !important;
+    }
+    .butt {
+        position: absolute;
+        width: 160px;
+        height: 160px;
+        left: 20px;
+        top: 20px;
+        font-size: 62px;
+        color: #f2f2f2;
+        text-shadow: 0px 1px 0px #fff;
+        text-align: center;
+        border-radius: 50%;
+        background-image: linear-gradient(top, #eee, #bbb 70%, #9f9f9f 100%);
+        background-position: 0 6px;
+        background-color: #eee;
+        background-repeat: no-repeat;
+        box-shadow: rgba(0, 0, 0, .4) 0 3px 6px;
+        transition: all .1s ease-in;
+        ion-icon {
+            line-height: 160px;
+        }
+    }
+    .butt:active {
+        width: 150px;
+        height: 150px;
+        margin: 2px 0 0 2px;
+        //border-bottom: 1px solid #fff;
+        font-size: 90px;
+        color: $my-coolor;
+        //box-shadow: inset rgba(0, 0, 0, .5) 0px 5px 10px;
+    }
+    .on {
+        color: rgb(219, 211, 101);
+        transition: all .1s ease-in;
+    }
+    .off {
+        color: rgba(88, 86, 57, 0.568);
+        transition: all .1s ease-out;
+    }
 }

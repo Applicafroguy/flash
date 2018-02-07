@@ -1,14 +1,25 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>
+<ion-content class="bg">
+    <div class="cont">
+        <div class="header">
+            <h1>FLASH</h1>
+            <h4>lyt</h4>
+        </div>
+        <div id="button" [ngClass]="flashOn ? 'flash-on' : 'flash-off'">
+            <a class="butt" (click)="turnOnOff()">
+                <ion-icon name="flash" [ngClass]="flashOn ? 'on' :  'off'"></ion-icon>
+            </a>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+        </div>
+
+    </div>
+
+
+
 </ion-content>
+<ion-footer>
+
+    <div class="identity">
+        <p>Applicafro (Pty) Ltd</p>
+    </div>
+
+</ion-footer>
